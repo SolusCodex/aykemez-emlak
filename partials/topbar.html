@@ -1,0 +1,51 @@
+<div class="container-fluid border-bottom d-none d-lg-block">
+    <div class="row gx-0">
+        <div id="office-location" class="col-lg-6 text-center py-2">
+            <div class="d-inline-flex align-items-center">
+                <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-uppercase mb-1">Ofİsİmİz</h6>
+                    <span>Yeni, Atatürk Blv. No:6 D:2, 50160 Nevşehir Merkez/Nevşehir</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="phone-call" class="col-lg-6 text-center border-start py-2">
+            <div class="d-inline-flex align-items-center">
+                <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                <div class="text-start">
+                    <h6 class="text-uppercase mb-1">BİZİ ARAYIN</h6>
+                    <span>0384 212 66 55</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script defer>
+    document.getElementById("office-location").addEventListener("click", (e) => {
+        window.open('https://goo.gl/maps/8gt3csd6nsV36oKAA', '_blank');
+    })
+
+    document.getElementById("phone-call").addEventListener("click", (e) => {
+        const phoneNumber = "+903842126655"; // Replace with the desired telephone number
+        window.location.href = "tel:" + phoneNumber;
+    })
+
+</script>
+
+<style>
+.bi {
+    color: #34a7d0 !important;
+
+}
+
+#office-location:hover{
+    cursor: pointer !important;
+}
+
+#phone-call:hover{
+    cursor: pointer !important;
+}
+
+</style>
