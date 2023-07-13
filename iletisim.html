@@ -119,6 +119,18 @@
                   <span>@aykemezemlak</span>
                 </div>
               </div>
+              <div id="sahibinden-logo-box" class="d-flex align-items-center mb-4">
+                <img
+                  id="sahibinden-logo"
+                  src="/img/myImages/sahibinden-tekli-logo-mini.png"
+                  alt="ig logo"
+                  srcset=""
+                />
+                <div class="text-start">
+                  <h6 class="text-uppercase mb-1">SAHİBİNDEN</h6>
+                  <span class="text-truncate">Aykemez Gayrimenkul</span>
+                </div>
+              </div>
               <div>
                 <iframe
                   class="position-relative w-100"
@@ -146,12 +158,27 @@
       #ig-logo-box {
         cursor: pointer;
       }
+
+      #sahibinden-logo {
+        margin-right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      #sahibinden-logo-box {
+        cursor: pointer;
+      }
     </style>
 
     <script defer>
+
       document.getElementById("ig-logo-box").addEventListener("click", (e) => {
         window.open("https://instagram.com/aykemezemlak", "_blank");
       });
+
+      document.getElementById("sahibinden-logo-box").addEventListener("click", (e) => {
+        window.open("https://aykemezgayrimenkulnevsehir.sahibinden.com/","_blank");
+      })
 
       function calculateDimensions() {
         console.log("CAL");
@@ -162,14 +189,20 @@
         const desiredWidth = otherElementWidth;
         const desiredHeight = otherElementHeight;
 
-        const imgElement = document.getElementById("ig-logo");
-        imgElement.style.width = `${desiredWidth}px`;
-        imgElement.style.height = `${desiredWidth}px`;
+        const imgElement1 = document.getElementById("ig-logo");
+        imgElement1.style.width = `${desiredWidth}px`;
+        imgElement1.style.height = `${desiredWidth}px`;
+
+        const imgElement2 = document.getElementById("sahibinden-logo");
+        imgElement2.style.width = `${desiredWidth}px`;
+        imgElement2.style.height = `${desiredWidth}px`;
       }
 
       // Call the function when the window is resized
       window.addEventListener("resize", calculateDimensions);
 
+
+      /*
       // Select the target element
       const targetElement = document.getElementById("size-reference");
 
@@ -192,7 +225,7 @@
       });
 
       // Start observing the target element
-      resizeObserver.observe(targetElement);
+      resizeObserver.observe(targetElement);*/
 
       calculateDimensions();
       // Initial calculation
