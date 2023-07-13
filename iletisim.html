@@ -63,7 +63,7 @@
         <div class="row g-5">
           <div class="col-lg-12">
             <div class="bg-light mb-5 p-5">
-              <div class="d-flex align-items-center mb-2">
+              <div id="adres-box" class="d-flex align-items-center mb-2">
                 <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                 <div class="text-start">
                   <h6 class="text-uppercase mb-1">OFİS ADRESİMİZ</h6>
@@ -168,9 +168,16 @@
       #sahibinden-logo-box {
         cursor: pointer;
       }
+
+      #adres-box:hover{
+        cursor: pointer;
+      }
     </style>
 
     <script defer>
+      document.getElementById("adres-box").addEventListener("click", (e) => {
+        window.open("https://www.google.com/maps/place/AYKEMEZ+GAYR%C4%B0MENKUL/@38.6249858,34.7145554,15z/data=!4m2!3m1!1s0x0:0x585e287d6803af13?sa=X&ved=2ahUKEwiK-JLqq4yAAxUMTqQEHUUWCs4Q_BJ6BAhDEAA&ved=2ahUKEwiK-JLqq4yAAxUMTqQEHUUWCs4Q_BJ6BAhMEAc","_blank");
+      })
 
       document.getElementById("ig-logo-box").addEventListener("click", (e) => {
         window.open("https://instagram.com/aykemezemlak", "_blank");
