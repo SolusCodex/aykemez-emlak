@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: 
+Disallow: /LICENSE.txt
+Disallow: /READ-ME.txt
+
+Sitemap: https://aykemezemlak.org/sitemap.xml
